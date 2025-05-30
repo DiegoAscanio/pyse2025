@@ -73,11 +73,7 @@
     margin-left: auto;
     margin-right: auto;
   }
-  section.lead p {
-    text-align: justify;
-    font-size: 18px;
-  }
-  section.lead h1, h2, h3, h4 {
+  section.lead h1, h2, h3, h4, h5, h6, p {
     text-align: center;
   }
   
@@ -134,6 +130,14 @@
     width: 50%;
   }
 
+  img[alt=rounded-grid-img-50] {
+    display: block;
+    margin: auto;
+    width: 50%;
+    border-radius: 50%;
+  }
+
+
   img[alt=grid-img-75] {
     display: block;
     margin: auto;
@@ -164,8 +168,9 @@
   }
 
   .column-container {
-    flex: 1;
     padding: 5px;
+    display: grid;
+    place-items: center;
   }
 
   .column-row-container {
